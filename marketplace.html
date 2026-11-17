@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marketplace · CampusFind</title>
+<meta name="description" content="CampusFind — the campus-only marketplace for student products and services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=localStorage.getItem('cf_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="marketplace">
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+
+<div class="container">
+  <div class="page-head"><h1>Marketplace</h1><p>Products and services from students on your campus.</p></div>
+  <form class="filters" id="filters" role="search" aria-label="Filter listings">
+    <div class="field"><label for="f-q">Search</label><input id="f-q" name="q" type="search" placeholder="Keyword…" autocomplete="off"></div>
+    <div class="field"><label for="f-cat">Category</label><select id="f-cat" name="cat"></select></div>
+    <div class="field"><label for="f-type">Type</label><select id="f-type" name="type"><option value="">Products &amp; Services</option><option value="product">Products</option><option value="service">Services</option></select></div>
+    <div class="field"><label for="f-min">Min price (KSh)</label><input id="f-min" name="min" type="number" min="0" inputmode="numeric" placeholder="0"></div>
+    <div class="field"><label for="f-max">Max price (KSh)</label><input id="f-max" name="max" type="number" min="0" inputmode="numeric" placeholder="Any"></div>
+    <div class="field"><label for="f-sort">Sort by</label><select id="f-sort" name="sort"><option value="newest">Newest</option><option value="oldest">Oldest</option><option value="low">Lowest price</option><option value="high">Highest price</option></select></div>
+    <button type="button" class="btn btn-outline" id="clear">Clear filters</button>
+  </form>
+  <div class="results-bar"><strong id="count" aria-live="polite">—</strong></div>
+  <div class="grid" id="results"></div>
+  <nav class="pagination" id="pagination" aria-label="Pagination"></nav>
+</div>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

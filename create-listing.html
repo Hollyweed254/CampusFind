@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sell or Offer a Service · CampusFind</title>
+<meta name="description" content="CampusFind — the campus-only marketplace for student products and services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=localStorage.getItem('cf_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="create-listing">
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+
+<div class="container">
+  <div class="page-head"><h1>Sell or offer a service</h1><p>Tell students what you have. It takes about two minutes.</p></div>
+  <div class="notice" style="margin-top:20px"><i data-icon="info"></i><div><strong>Admin approval required.</strong> New listings are reviewed by an administrator before they appear publicly. This usually takes less than 24 hours.</div></div>
+  <div class="form-layout">
+    <form class="panel" id="listing-form" novalidate>
+      <div class="field"><label for="title">Listing title</label><input id="title" name="title" maxlength="80" placeholder="e.g. HP EliteBook 840 G5 Laptop"></div>
+      <div class="row">
+        <div class="field"><label for="type">Listing type</label><select id="type" name="type"><option value="">Select type</option><option value="product">Product</option><option value="service">Service</option></select></div>
+        <div class="field"><label for="cat">Category</label><select id="cat" name="cat"></select></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="price">Price (KSh)</label><input id="price" name="price" type="number" min="0" inputmode="numeric" placeholder="0"><span class="hint">For services, enter your starting price.</span></div>
+        <div class="field"><label for="loc">Location</label><input id="loc" name="loc" placeholder="e.g. Hostel Block B"></div>
+      </div>
+      <div class="field"><label for="desc">Description</label><textarea id="desc" name="desc" placeholder="Condition, features, availability, anything a buyer should know…"></textarea></div>
+      <h2 style="margin-top:8px">Contact information</h2>
+      <div class="row">
+        <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" placeholder="0712 345 678"></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email"></div>
+      </div>
+      <div class="field"><span class="label" id="img-label">Photos <span class="muted" id="img-count">0/3 images</span></span>
+        <label class="upload" for="images"><i data-icon="upload" data-size="28"></i><div><strong>Click to upload</strong> JPG or PNG, up to 5 MB each</div></label>
+        <input id="images" type="file" accept="image/*" multiple class="sr-only" aria-labelledby="img-label">
+        <p class="field-error" id="img-error" role="alert"></p><div class="previews" id="previews"></div></div>
+      <button class="btn btn-primary btn-lg" type="submit">Submit Listing</button>
+    </form>
+    <aside class="panel"><h2>Before you post</h2><ol class="steps"><li>Use clear, honest photos of the actual item.</li><li>Include condition, price and where to meet.</li><li>Prohibited items and fake products will be rejected.</li><li>Buyers contact you directly — never share passwords or send money upfront.</li></ol></aside>
+  </div>
+</div>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

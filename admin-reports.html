@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin · Reports · CampusFind</title>
+<meta name="description" content="CampusFind — the campus-only marketplace for student products and services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=localStorage.getItem('cf_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="admin-reports" data-layout="admin">
+<a class="skip" href="#main">Skip to content</a>
+<div class="admin-shell">
+<aside class="sidebar" id="admin-sidebar" aria-label="Admin navigation"></aside>
+<div class="admin-main">
+<div class="admin-top" id="admin-top"></div>
+<main id="main" class="admin-content">
+
+<section id="tab-reported">
+  <div class="admin-title"><div><h1>Reported listings</h1><p class="muted">Review listings flagged by students.</p></div></div>
+  <div class="table-wrap" style="margin-top:16px"><table class="responsive"><thead><tr><th>Listing</th><th>Reason</th><th>Reported by</th><th>Date</th><th>Status</th><th><span class="sr-only">Actions</span></th></tr></thead><tbody id="report-rows"></tbody></table></div>
+</section>
+<section id="tab-analytics" class="hidden">
+  <div class="admin-title"><div><h1>Reports</h1><p class="muted">Listing activity for a selected period.</p></div><button class="btn btn-outline no-print" id="print"><i data-icon="printer" data-size="18"></i>Print report</button></div>
+  <div class="toolbar no-print" style="margin-top:16px"><div class="field"><label for="from">From</label><input id="from" type="date" class="input"></div><div class="field"><label for="to">To</label><input id="to" type="date" class="input"></div></div>
+  <p class="field-error" id="range-err" role="alert"></p>
+  <div class="print-only"><h2>CampusFind — Listing report</h2></div>
+  <p class="muted small">Period: <strong id="range-label"></strong></p>
+  <div class="stats" id="r-stats"></div>
+  <div class="table-wrap"><table class="responsive"><thead><tr><th>Category</th><th>Listings</th><th>Active</th><th>Avg. price</th></tr></thead><tbody id="r-rows"></tbody></table></div>
+</section>
+
+</main>
+</div>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

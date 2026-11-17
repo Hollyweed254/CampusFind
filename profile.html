@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile · CampusFind</title>
+<meta name="description" content="CampusFind — the campus-only marketplace for student products and services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=localStorage.getItem('cf_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="profile">
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+
+<div class="container" style="max-width:860px;padding-bottom:24px">
+  <div class="page-head" style="display:flex;gap:16px;align-items:center"><span class="avatar avatar-lg" id="p-avatar"></span><div><h1 id="p-name" style="margin:0"></h1><p id="p-email-top"></p></div></div>
+  <div style="display:grid;gap:20px;margin-top:20px">
+    <form class="panel" id="profile-form" novalidate><h2>Profile information</h2>
+      <div class="row"><div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name"></div><div class="field"><label for="uni">University</label><input id="uni" name="uni"></div></div>
+      <div class="row"><div class="field"><label for="email">Email</label><input id="email" name="email" type="email"></div><div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel"></div></div>
+      <button class="btn btn-primary" type="submit">Save changes</button></form>
+    <form class="panel" id="password-form" novalidate><h2>Change password</h2>
+      <div class="field"><label for="current">Current password</label><div class="input-wrap"><input id="current" name="current" type="password" autocomplete="current-password"><button class="btn-icon" type="button" data-toggle-password="current" aria-label="Show password"><i data-icon="eye"></i></button></div></div>
+      <div class="row"><div class="field"><label for="password">New password</label><input id="password" name="password" type="password" autocomplete="new-password"><span class="hint">At least 8 characters with letters and numbers.</span></div><div class="field"><label for="confirm">Confirm new password</label><input id="confirm" name="confirm" type="password" autocomplete="new-password"></div></div>
+      <button class="btn btn-primary" type="submit">Update password</button></form>
+    <section class="panel"><h2>Account settings</h2>
+      <div class="setting"><div><strong>Email notifications</strong><div class="muted small">Get notified when your listings are approved.</div></div><label class="switch"><input type="checkbox" checked aria-label="Email notifications"><span></span></label></div>
+      <div class="setting"><div><strong>Show phone number on listings</strong><div class="muted small">Buyers can call or WhatsApp you.</div></div><label class="switch"><input type="checkbox" checked aria-label="Show phone number"><span></span></label></div>
+      <div class="setting"><div><strong>Dark theme</strong><div class="muted small">Easier on the eyes at night.</div></div><label class="switch"><input type="checkbox" id="set-dark" aria-label="Dark theme"><span></span></label></div>
+      <div class="setting"><div><strong>Delete account</strong><div class="muted small">Permanently remove your account and listings.</div></div><button class="btn btn-danger btn-sm" id="delete-account" type="button">Delete</button></div></section>
+  </div>
+</div>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

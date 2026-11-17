@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your campus. Your marketplace. · CampusFind</title>
+<meta name="description" content="CampusFind — the campus-only marketplace for student products and services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=localStorage.getItem('cf_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="index">
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+
+<section class="hero container" aria-labelledby="hero-title">
+  <div class="hero-panel">
+    <span class="eyebrow">Campus-only marketplace</span>
+    <h1 id="hero-title">Your campus. <em>Your marketplace.</em></h1>
+    <p>Discover products and services offered by students at your university. Buy, sell and connect directly with people on campus — no middlemen and no payments on the platform.</p>
+    <form class="hero-search" id="hero-search" role="search">
+      <span class="si"><i data-icon="search"></i></span>
+      <label class="sr-only" for="hero-q">Search products and services</label>
+      <input id="hero-q" type="search" placeholder="Search laptops, textbooks, tutoring, braiding…" autocomplete="off">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+    <div class="chips on-dark" id="hero-chips" aria-label="Category shortcuts"></div>
+  </div>
+</section>
+
+<section class="section container" id="categories" aria-labelledby="cat-title">
+  <div class="section-head"><h2 id="cat-title">Browse by category</h2><a class="link" href="marketplace.html">All listings <i data-icon="chevR" data-size="16"></i></a></div>
+  <div class="cat-grid" id="category-grid"></div>
+</section>
+
+<section class="section container" aria-labelledby="latest-title" style="padding-top:0">
+  <div class="section-head"><h2 id="latest-title">Latest listings</h2><a class="link" href="marketplace.html">View All Listings <i data-icon="chevR" data-size="16"></i></a></div>
+  <div class="grid" id="latest-grid"></div>
+</section>
+
+<section class="section container" style="padding-top:0" aria-labelledby="how-title">
+  <div class="section-head"><h2 id="how-title">How CampusFind works</h2></div>
+  <div class="how">
+    <div class="panel"><div class="num">1</div><h3>Post or browse</h3><p class="muted small" style="margin:0">Create a free listing for a product or service, or search what other students are offering.</p></div>
+    <div class="panel"><div class="num">2</div><h3>Get approved</h3><p class="muted small" style="margin:0">Every new listing is reviewed by an administrator to keep the campus community safe.</p></div>
+    <div class="panel"><div class="num">3</div><h3>Connect directly</h3><p class="muted small" style="margin:0">Message sellers by WhatsApp, phone or email and agree on payment and meet-up between yourselves.</p></div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="cta"><div><h2>Got something to sell or a skill to offer?</h2><p>Reach thousands of students on your campus in minutes.</p></div><a class="btn btn-accent btn-lg" href="create-listing.html">Sell or Offer a Service</a></div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

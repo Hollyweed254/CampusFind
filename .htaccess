@@ -1,0 +1,40 @@
+# Static .html files here are design mockups; the working app is the .php version.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_URI} ^(.*/)index\.html
+  RewriteRule ^index\.html$ %1index.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)login\.html
+  RewriteRule ^login\.html$ %1login.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)register\.html
+  RewriteRule ^register\.html$ %1register.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)marketplace\.html
+  RewriteRule ^marketplace\.html$ %1marketplace.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)listing\.html
+  RewriteRule ^listing\.html$ %1listing.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)create-listing\.html
+  RewriteRule ^create-listing\.html$ %1create-listing.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)my-listings\.html
+  RewriteRule ^my-listings\.html$ %1my-listings.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)profile\.html
+  RewriteRule ^profile\.html$ %1profile.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)admin-dashboard\.html
+  RewriteRule ^admin-dashboard\.html$ %1admin/dashboard.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)admin-listings\.html
+  RewriteRule ^admin-listings\.html$ %1admin/listings.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)admin-users\.html
+  RewriteRule ^admin-users\.html$ %1admin/users.php [R=302,L,NC]
+
+  RewriteCond %{REQUEST_URI} ^(.*/)admin-reports\.html
+  RewriteRule ^admin-reports\.html$ %1admin/reports.php [R=302,L,NC]
+</IfModule>

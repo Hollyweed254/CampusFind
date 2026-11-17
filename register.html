@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create account · CampusFind</title>
+<meta name="description" content="CampusFind — the campus-only marketplace for student products and services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=localStorage.getItem('cf_theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="register">
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+
+<div class="auth-wrap">
+  <div class="auth-side"><h2>Join your campus community</h2><p>The trusted marketplace built for students.</p><ul><li><i data-icon="check" data-size="18"></i>Free to join, free to list</li><li><i data-icon="check" data-size="18"></i>Every listing is reviewed for safety</li><li><i data-icon="check" data-size="18"></i>No payments handled — you stay in control</li></ul></div>
+  <div class="auth-main"><div class="auth-card">
+    <h1>Create your account</h1><p class="muted">Use your university email to join your campus marketplace.</p>
+    <form id="register-form" novalidate>
+      <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" placeholder="Amina Wanjiru"></div>
+      <div class="field"><label for="email">University email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@students.university.ac.ke"></div>
+      <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="0712 345 678"><span class="hint">Used for WhatsApp and calls from buyers.</span></div>
+      <div class="row">
+        <div class="field"><label for="password">Password</label><div class="input-wrap"><input id="password" name="password" type="password" autocomplete="new-password"><button class="btn-icon" type="button" data-toggle-password="password" aria-label="Show password"><i data-icon="eye"></i></button></div></div>
+        <div class="field"><label for="confirm">Confirm password</label><div class="input-wrap"><input id="confirm" name="confirm" type="password" autocomplete="new-password"><button class="btn-icon" type="button" data-toggle-password="confirm" aria-label="Show password"><i data-icon="eye"></i></button></div></div>
+      </div>
+      <label class="check"><input type="checkbox" name="terms" id="terms"> <span>I agree to the <a class="link" href="#" onclick="return false">Terms</a> and <a class="link" href="#" onclick="return false">Privacy Policy</a></span></label>
+      <button class="btn btn-primary btn-block btn-lg" type="submit">Create account</button>
+    </form>
+    <p class="muted" style="margin-top:20px;text-align:center">Already registered? <a class="link" href="login.html">Login</a></p>
+  </div></div>
+</div>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

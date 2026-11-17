@@ -1,0 +1,19 @@
+uploads/*
+!uploads/.htaccess
+!uploads/.gitkeep
+includes/config.local.php
+
+# Runtime data — never commit user files or simulated deliveries
+storage/chat/*
+!storage/chat/index.html
+storage/mail/*
+!storage/mail/index.html
+storage/sms/*
+!storage/sms/index.html
+storage/verifications/*
+!storage/verifications/index.html
+
+# Local noise
+*.log
+.DS_Store
+Thumbs.db
