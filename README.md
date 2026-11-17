@@ -7,6 +7,10 @@ reported, never as verified by CampusFind.
 Stack: PHP 8, MySQL, PDO, Bootstrap 5, vanilla JS.
 
 ## Run locally (XAMPP)
+Collaborators setting up the database from a fresh clone: follow
+[docs/collaborator-setup.md](docs/collaborator-setup.md) for the exact
+commands (create DB, import schema, seed demo data, verify).
+
 1. Copy this folder to `C:\xampp\htdocs\CampusFind` (or run `setup.ps1`).
 2. Start Apache + MySQL in XAMPP.
 3. **Fresh install:** create database `campusfind` and import
